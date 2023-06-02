@@ -17,24 +17,49 @@
 
     <style>
 
-       
-        
-            /*ZOOMING THE IMAGES*/
+      h3 {
+        padding: 15px;
+        text-shadow: 1px 1px #fef7f1, 3px 3px 2px #f6aec4 ;
+        text-align: center;
+      }
 
-        .enlarge {
-            width: 15%;
-            float: right;
-            -webkit-transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-        }
-        .enlarge:hover {
-            width: 30%;
-            -webkit-transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-        cursor: pointer;
-        }
+      .text01 {
+        text-align: left;
+      }
+
+      .text02 {
+        text-align: right;
+      }
+      /* GELATO CIRCLES */
+
+    .circle {
+      float: left;
+      position: relative;
+      padding-right: 40px;
+      filter: drop-shadow(4px 4px 4px #240d13);
+      padding: 15px;
+      width: 100%;
+      height: auto;
+
+    } 
+        
+       /*ZOOMING THE IMAGES*/
+
+    .enlarge {
+      width: 80%;
+      float: right;
+      padding-right: 50px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .enlarge:hover {
+       width: 100%;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+       transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
         
     </style>
 </head>
@@ -80,8 +105,7 @@
                     <h1><b>OUR FLAVORS</b></h1><br>
                     <h2><b>Real Ingredients for Authentic Taste</b></h2>
                 </div>   
-             </div>  
-             <br>          
+             </div>          
             <hr>        
         </div>
         <div class="row">
@@ -89,45 +113,108 @@
         </div>
          
         <!-- carousel -->
+        
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="pictures/fresa.jpg" class="d-block w-100" alt="yellow cup with strawberry gelato">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="pictures/2O1A0841.jpg" class="d-block w-100" alt="chocolate gelato in a cup and chocolate chips">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="pictures/2O1A0857.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="pictures/2O1A0933.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="pictures/2O1A0893.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="pictures/2O1A0893.jpg" class="d-block w-100" alt="...">
-              </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="pictures/2O1A0841.jpg" class="d-block w-100" alt="...">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="pictures/2O1A0857.jpg" class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="pictures/fresa.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/2O1A0903.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/2O1A0893.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/2O1A0933.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>  
+        <!-- first part -->
+        <div class="row">
+          <h3>GELATO FLAVORS</h3>
+          <div class="col-5">
+            <div class="text01">
+              <p>STRACCIATELLA <br>
+                CHESTNUT & NUTELLA <br>
+                MEXICAN VANILLA <br>
+                CHOCOLATE <br>
+                FIG & CREAM <br>
+                PISTACHIO <br>
+                NUTELLA <br>
+                COFFEE <br>
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="text02">
+              <p>CHERRY CREAM <br>
+                TIRAMISU <br>
+                RUM & RAISIN <br>
+                BUTTERFINGER <br>
+                CHEESECAKE <br>
+                SALTED CARAMEL <br>
+                COOKIES & CREAM <br>
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="circle">
+              <img class="enlarge" src="pictures/flavors01.png" class="rounded mx-auto d-block" alt="A blue cup of ice cream with a spoon" title="Vanilla "/>
+            </div>   
+            <div class="circle">
+              <img class="enlarge" src="pictures/flavors02.png" class="rounded mx-auto d-block" alt="A cup of ice cream with a spoon" title="hazelnut "/>
+            </div>  
+          </div>  
         </div>
-    <div>   
-        <div>
-             <img class="enlarge" src="gelato/gelato-vanilla-01.png" alt="A cup of ice cream with a spoon" title="Vanilla "/>
+        <!-- second part -->
+        <div class="row">
+          <div class="col-3">
+            <div class="circle">
+              <img class="enlarge" src="pictures/flavors03.png" class="rounded mx-auto d-block" alt="a cup with  mango sorbet" title="mango">
+             </div>
+             <div class="circle">
+              <img class="enlarge" src="pictures/flavors04.png" class="rounded mx-auto d-block" alt="A cup of ice cream with limes" title="coconut & lime zest "/>
+            </div>
+            <div class="circle">
+              <img class="enlarge" src="pictures/flavors05.png" class="rounded mx-auto d-block" alt="A cup of ice cream with pumpkins" title="seasonal "/>
+            </div>    
+          </div>
+          <div class="col-9">
+            <h3>SORBET & VEGAN FLAVORS</h3><br>
+              <p>Our sorbets and vegan gelatos are just as smooth and creamy as traditional gelato – without the dairy. </p>
+            <div class="text02">
+              <p> BLACK HAWAII -CHOCOLATE COCONUT- <br>
+                STRAWBERRY <br>
+                SICILIAN DREAM -ALMOND PISTACHIO- <br>
+                LEMON MERINGUE <br>
+                COCONUT LIME ZEST <br>
+                TEXAS SUNSET -ORANGE RASPBERRY MANGO- <br>
+                LEMON LAVENDER <br>
+                WHISKY & CHOCOLATE <br>
+                </p>
+                <h6>FLAVORS ARE SUBJECT TO SEASONAL ROTATION</h6>
+            </div>
+          </div>
         </div>
     </div>
+    </div> 
     
-    
-
+    <!-- footer -->
     <footer>
         <div class="container">
             <div class="row">
