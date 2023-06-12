@@ -24,13 +24,19 @@
   }
 
   .text01 {
-    text-align: left;
-   }
-
-  .text02 {
-    text-align: right;
+    text-align: center;
+   
   }
 
+  .text02 {
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .text01, .text02 {
+      text-align: center;
+    }
+  }
   /* CAROUSEL CONTROL */
 
 .fla-caro {
@@ -166,7 +172,7 @@
         <!-- first part -->
         <div class="row">
           <h3>GELATO FLAVORS</h3>
-          <div class="col-5">
+          <div class="col-sm-5">
             <div class="text01">
               <p>STRACCIATELLA <br>
                 CHESTNUT & NUTELLA <br>
@@ -179,7 +185,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-4">
             <div class="text02">
               <p>CHERRY CREAM <br>
                 TIRAMISU <br>
@@ -191,7 +197,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-sm-3">
             <div class="circle">
               <img class="enlarge" src="pictures/flavors01.png" class="rounded mx-auto d-block" alt="A blue cup of ice cream with a spoon" title="Vanilla "/>
             </div>   
@@ -202,7 +208,7 @@
         </div>
         <!-- second part -->
         <div class="row">
-          <div class="col-3">
+          <div class="col-sm-3">
             <div class="circle">
               <img class="enlarge" src="pictures/flavors03.png" class="rounded mx-auto d-block" alt="a cup with  mango sorbet" title="mango">
              </div>
@@ -213,7 +219,7 @@
               <img class="enlarge" src="pictures/flavors05.png" class="rounded mx-auto d-block" alt="A cup of ice cream with pumpkins" title="seasonal "/>
             </div>    
           </div>
-          <div class="col-9">
+          <div class="col-sm-9">
             <h3>SORBET & VEGAN FLAVORS</h3><br>
               <p>Our sorbets and vegan gelatos are just as smooth and creamy as traditional gelato, without the dairy. </p>
             <div class="text02">
