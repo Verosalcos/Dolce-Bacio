@@ -51,9 +51,9 @@
         }
 
         .message {
-            display: flex;
+            /* display: flex; */
             flex-direction: column;
-            width: 80%;
+            width: 100%;
         }
 
         .message textarea {
@@ -64,6 +64,7 @@
         .contact-details {
             flex: 1;
             margin-right: 50px;
+            text-align: center;
         }
 
         .contact-details input {
@@ -114,7 +115,7 @@
         <a href="events.html">EVENTS</a>
         <a href="wholesale.html">WHOLESALE</a>
         <a href="contact.html" class="active">CONTACT</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>     
     <script>
         function myFunction() {
@@ -154,7 +155,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="pic">
-                    <img src="pictures/cont01.jpg" alt="chocolate gelato, business card">
+                    <img src="pictures/cont01.jpg" width="100%" alt="chocolate gelato, business card">
                 </div>
             </div>
             <div class="col-sm-8">   
@@ -162,9 +163,9 @@
                     <div class="contact-details">
 
                         <label for="name">Name</label>
-                        <input type="text" id="yourname" placeholder="Your name">
-                        <label for="name">Business name</label>
-                        <input type="text" id="yourname" placeholder="Business name">
+                        <input type="text" id="name" placeholder="Your name">
+                        <label for="business">Business name</label>
+                        <input type="text" id="business" placeholder="Business name">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Your email address">
                         <label for="telephone">Telephone</label>
@@ -174,7 +175,7 @@
                     
                     <div class="message">
                         <label for="msg">Message</label>
-                        <textarea id="msg" cols="20" rows="10"></textarea>
+                        <textarea id="msg" cols="50" rows="15"></textarea>
                         <button type="submit">Submit</button>
 
                     </div>
@@ -188,23 +189,23 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="column">
-                <h2>FOLLOW US</h2>
-                <div class="follow">
-                    <a href="https://www.facebook.com/dolcebacioit" target="_blank"><i class="fa fa-facebook " style="font-size:24px"></i></a> 
-                    <a href="https://instagram.com/dolce_bacio?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram" style="font: size 24px" ></i></a>
-                </div>
-            </div>
-            <div class="column">
-                <h2>WHERE TO FIND US</h2>
+          <div class="column">
+             <h2>Follow us</h2>
+             <div class="follow">
+              <a href="https://www.facebook.com/dolcebacioit " target="_blank"><i class="fa fa-facebook  " style="font-size:35px"></i></a> 
+              <a href="https://instagram.com/dolce_bacio?igshid=YmMyMTA2M2Y= " target="_blank"><i class="fa fa-instagram " style="font-size:35px" ></i></a>
+          </div><br>
+         </div>       
+
+              <div class="column">
+                <h2>Find us here</h2>
                 <div class="find"> 
-                    <a href="https://moodycenteratx.com/" target="_blank">Moody center</a> <br>
-                    <br>
-                    <a href="https://www.tonycsbeergarden.com/" target="_blank">Tony's</a>
-                </div>
-            </div>
+                    <a href="https://moodycenteratx.com/" target="_blank"><h5>Moody center</h5></a>
+                    <a href="https://www.tonycsbeergarden.com/" target="_blank"><h5>Tony's</h5></a>
+                </div><br>
+              </div>
         </div>
-    </div>
+     </div>
 </footer>
 
 <!-- Bootstrap JS -->
