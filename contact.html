@@ -167,22 +167,29 @@
             </div>
             <div class="col-sm-8">   
                 <form class="contact-form" action="https://formsubmit.co/1edb09ce84ee77525a402360680214c1" method="POST" >
+                    <!-- honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Disable Captcha -->
+
+                    <input type="text" name="_captcha" value="false">
+
                     <div class="contact-details">
 
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your name">
+                        <input type="text" id="name" name="Name" placeholder="Your name">
                         <label for="business">Business name</label>
-                        <input type="text" id="business" placeholder="Business name">
+                        <input type="text" id="business" name="Business name" placeholder="Business name">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your email address">
+                        <input type="email" id="email" name="Email" placeholder="Your email address">
                         <label for="telephone">Telephone</label>
-                        <input type="text" id="telephone" placeholder="Telephone number">
+                        <input type="text" id="telephone" name="Telephone" placeholder="Telephone number">
                         <label for="city">City</label>
-                        <input type="text" id="city" placeholder="Where are you place">
+                        <input type="text" id="city" name="City" placeholder="Where are you place">
                     
                     <div class="message">
                         <label for="msg">Message</label>
-                        <textarea id="msg" rows="15"></textarea>
+                        <textarea id="msg" name="Message" rows="15"></textarea>
                         <br>
                         <button type="submit">Submit</button>
 
