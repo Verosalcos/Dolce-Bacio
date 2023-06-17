@@ -98,7 +98,7 @@
         }
 
         .message button:hover {
-            background-color: #b2445f;
+            background-color: #322629;
             color: #ffe4ec;
             transition: 2s;
         }
@@ -174,14 +174,16 @@
 
                     <input type="hidden" name="_captcha" value="false">
 
-                    <div class="contact-details">
+                    <!-- link to the success page -->
 
+                    <input type="hidden" name="_next" value="https://verosalcos.github.io/Dolce-Bacio/success.html">
+                    <div class="contact-details">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="Name" placeholder="Your name">
+                        <input type="text" id="name" name="Name"  placeholder="Your name" required>
                         <label for="business">Business name</label>
                         <input type="text" id="business" name="Business&nbsp;name" placeholder="Business name">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="Email" placeholder="Your email address">
+                        <input type="email" id="email" name="Email" placeholder="Your email address" required>
                         <label for="telephone">Telephone</label>
                         <input type="text" id="telephone" name="Telephone" placeholder="Telephone number">
                         <label for="city">City</label>
