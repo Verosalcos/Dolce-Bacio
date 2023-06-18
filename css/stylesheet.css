@@ -28,10 +28,10 @@
     margin-left: 10%;
   }
   
-  .active {
+  /* .active {
     background-color: #240d13;
     color:#f6aec4;
-  }
+  } */
   
   .topnav .icon {
     display: none;
@@ -92,7 +92,9 @@
     overflow: visible;
     margin-left: 10%; 
   } */
+
   /* responsive nav */
+
   @media screen and (max-width: 1024px) {
     .topnav a:not(:first-child), 
     .dropdown .dropbtn {
